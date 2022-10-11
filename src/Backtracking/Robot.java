@@ -1,0 +1,21 @@
+package Backtracking;
+
+/**
+ * @author zhaoyh
+ * @version 1.0
+ * @description: leetcode 489所需接口
+ * @date 2022/10/10 11:32
+ */
+public interface Robot {
+    // Returns true if the cell in front is open and robot moves into the cell.
+    // Returns false if the cell in front is blocked and robot stays in the current cell.
+    public boolean move();
+
+    // Robot will stay in the same cell after calling turnLeft/turnRight.
+    // Each turn will be 90 degrees.
+    public void turnLeft();
+    public void turnRight();
+
+    // Clean the current cell.
+    public void clean();
+}
